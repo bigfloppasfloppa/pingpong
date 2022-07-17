@@ -14,7 +14,7 @@ class GameSprite(sprite.Sprite):
    def reset(self):
        window.blit(self.image, (self.rect.x, self.rect.y))
  
-class Player(GameSprite):
+class Player(GameSprite): # класс игрока
    def update_r(self):
        keys = key.get_pressed()
        if keys[K_UP] and self.rect.y > 5:
